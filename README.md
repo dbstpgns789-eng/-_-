@@ -32,8 +32,14 @@
   - 표준오차: $\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$
   - 신뢰수준과 구간 폭의 Trade-off 관계
 
-### HW4
+### HW4 - 표본 크기 결정 (Sample Size Determination)
 - **파일**: `HW4_윤세훈 (2).ipynb`
+- **주요 개념**:
+  - 표본 크기 공식: $n = \left(\frac{z \times \sigma}{E}\right)^2$
+  - `math.ceil()`: 올림 함수 (천장 함수)
+  - 허용 오차(Margin of Error): 추정의 정밀도
+  - `scipy.stats.norm.ppf()`: 임계값 계산
+  - 표본 크기와 정밀도의 Trade-off 관계
 
 ### HW5
 - **파일**: `HW5 (1).ipynb`
