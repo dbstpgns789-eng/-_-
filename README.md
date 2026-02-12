@@ -22,8 +22,15 @@
   - 누적 평균: 각 시점까지의 평균 확률 계산
   - `plt.axhline()`: 기준선 표시
 
-### HW3
+### HW3 - 모비율 신뢰구간 (Confidence Interval for Proportion)
 - **파일**: `hw3_윤세훈 (2).ipynb`
+- **주요 개념**:
+  - `scipy.stats.norm`: 정규분포 객체
+  - `norm.ppf()`: Percent Point Function (분위수 함수, 역CDF)
+  - 점 추정량: 표본 비율 ($\hat{p}$)
+  - 신뢰구간 공식: $\hat{p} \pm z_{\alpha/2} \times SE$
+  - 표준오차: $\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$
+  - 신뢰수준과 구간 폭의 Trade-off 관계
 
 ### HW4
 - **파일**: `HW4_윤세훈 (2).ipynb`
