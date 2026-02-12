@@ -55,8 +55,18 @@
   - SST(총제곱합), SSE(오차제곱합), R² = 1 - SSE/SST
   - Adjusted R²: 변수 증가 페널티 반영
 
-### HW6
+### HW6 - 경사하강법 & 로지스틱 회귀
 - **파일**: `HW6 (1).ipynb`
+- **Part 1: 경사하강법 (Gradient Descent)**
+  - **문제**: 함수 최솟값을 반복적으로 찾기
+  - **로직**: θ_new = θ_old - η × ∇f(θ) (기울기 반대 방향 이동)
+  - **수렴 조건**: |value_old - value_new| < 1e-7
+  - **학습률(η)**: 이동 보폭 크기
+- **Part 2: 로지스틱 회귀 분류**
+  - **데이터**: Wine 데이터 13개 특성으로 라벨 분류
+  - **전처리**: train_test_split (stratify로 클래스 비율 유지) + StandardScaler
+  - **핵심**: fit_transform (훈련) vs transform (테스트) - 정보 유출 방지
+  - **평가**: Accuracy & F1 Score (클래스 불균형 대응)
 
 ### HW7
 - **파일**: `HW7 (2).ipynb`
